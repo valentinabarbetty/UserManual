@@ -1,0 +1,63 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background: transparent; /* Hace que el navbar sea transparente */
+  }
+  
+  .navbar-logo img {
+    width: 36px;
+    height: 36px;
+    margin-right: 20px;
+  }
+  
+  .navbar-search {
+    max-width: 300px;
+    margin-right: 20px;
+  }
+  
+  .navbar-links {
+    display: flex;
+    gap: 10px;
+    color: #fff;
+    font-size: 14px;
+    margin-right: auto;
+  }
+  
+  .navbar-buttons {
+    display: flex;
+    gap: 10px;
+    margin-right: 20px;
+  }
+  
+  .premium-button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 20px;
+  }
+  
+  .install-button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+  }
+  
+  .navbar-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+  }
+  
+  .account-button {
+    color: #fff;
+    background: none;
+    border: none;
+  }
+  

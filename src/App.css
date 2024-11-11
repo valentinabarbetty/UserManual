@@ -36,3 +36,36 @@
     transform: rotate(360deg);
   }
 }
+/* En el App.css o el CSS global */
+.content {
+  padding-top: 80px; /* Ajusta según la altura del navbar */
+  text-align: center;
+}
+.App {
+  display: flex;
+  flex-direction: column; /* Esto coloca el navbar arriba */
+  height: 100vh;
+}
+
+.Navbar {
+  flex: 0 1 auto; /* No debería crecer ni reducirse, solo ocupa el espacio necesario */
+  width: 100%;
+}
+
+.Sidebar {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 250px; /* Fija el ancho del sidebar */
+  height: calc(100vh - 60px); /* Altura restante después del navbar */
+}
+
+.content {
+  display: flex;
+  flex: 1; /* Toma el espacio restante */
+  flex-direction: row; /* El contenido está al lado del sidebar */
+}
+
+.Home {
+  flex: 1; /* El contenido de Home toma el espacio disponible */
+  padding: 20px; /* Agrega un poco de espaciado */
+}
