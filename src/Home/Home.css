@@ -1,0 +1,25 @@
+.home-container {
+    padding: 20px;
+    margin-top: 50px;
+    width: 80%;
+    padding-left: 240px;
+    border-radius: 8px;
+  }
+  
+ 
+  .home-container {
+    padding: 20px;
+    margin-top: 50px;
+    width: 80%;
+    padding-left: 240px;
+    border-radius: 8px;
+  }
+  
+  /* Media Query para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .home-container {
+      padding-left: 20px;  /* Reducir el padding para pantallas pequeñas */
+      width: 100%;  /* Hacer que el contenedor ocupe el 100% del ancho */
+    }
+  }
+  

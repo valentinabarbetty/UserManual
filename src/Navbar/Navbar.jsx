@@ -1,35 +1,43 @@
-import React from 'react';
-import { Layout, Input, Button, Menu, Dropdown } from 'antd';
-import { SearchOutlined, GlobalOutlined, UserOutlined, DownOutlined } from '@ant-design/icons';
+import React, { useState } from 'react';
+import { Layout, Input, Menu, Dropdown } from 'antd';
+import { SearchOutlined, UserOutlined, DownOutlined, MenuOutlined } from '@ant-design/icons';
 import './Navbar.css';
 
 const { Header } = Layout;
 
 const Navbar = () => {
-  const menu = (
-    <Menu>
-      <Menu.Item key="1">Profile</Menu.Item>
-      <Menu.Item key="2">Settings</Menu.Item>
-      <Menu.Item key="3">Log out</Menu.Item>
-    </Menu>
-  );
+  const [visible, setVisible] = useState(false);
+
+  const handleMenuClick = () => {
+    setVisible(!visible);
+  };
 
   return (
     <Header className="navbar">
       <div className="navbar-logo">
-        <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2023/05/Spotify_Primary_Logo_RGB_White.png" alt="Spotify Logo" />
+        <a href="https://support.spotify.com/co-es/" target="_blank" rel="noopener noreferrer">
+          <img
+            className="navbar-logo-icon"
+            src="https://storage.googleapis.com/pr-newsroom-wp/1/2023/05/Spotify_Primary_Logo_RGB_White.png"
+            alt="Spotify Logo"
+          />
+        </a>
+        <span className="navbar-logo-text">Spotify</span>
       </div>
-      <Input
-        className="navbar-search"
-        placeholder="Buscar"
-        prefix={<SearchOutlined />}
-      />
-      <div className="navbar-links">
-        <span>Inicio</span>
-        <span>Ayuda con un dispositivo</span>
+      <div className="navbar-options">
+        <Input
+          className="navbar-search"
+          placeholder="Buscar"
+          prefix={<SearchOutlined />}
+        />
       </div>
-    
-      
+      <div className={`navbar-links ${visible ? 'visible' : ''}`}>
+        <span className="navbar-link">Profile</span>
+        <span className="navbar-link">Settings</span>
+      </div>
+      <div className="navbar-mobile-menu" onClick={handleMenuClick}>
+        <MenuOutlined style={{ color: 'white', fontSize: '24px' }} />
+      </div>
     </Header>
   );
 };

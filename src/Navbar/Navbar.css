@@ -1,64 +1,130 @@
+/* Estilos para el Navbar */
 .navbar {
-    display: flex;
-    align-items: center;
-    padding: 0 24px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    background: transparent; /* Hace que el navbar sea transparente */
-  }
-  
-  .navbar-logo img {
-    width: 36px;
-    height: 36px;
-    margin-right: 20px;
-    margin-top: 20px;
-  }
-  
-  .navbar-search {
-    max-width: 300px;
-    margin-right: 20px;
-  }
-  
+  background-color: transparent; /* Fondo oscuro como Spotify */
+  padding: 0 20px;
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.navbar-logo {
+
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo-icon {
+  margin-top: 20px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.navbar-logo-text {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-options {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-search {
+  width: 400px;
+  background-color: white; /* Fondo blanco */
+  border: none; /* Sin bordes */
+  padding: 10px 20px; /* Aumenta la altura */
+  color: black; /* Color de texto negro */
+  font-size: 18px;
+}
+
+.navbar-links {
+  margin-right: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-link {
+  color: white;
+  margin-left: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.navbar-link:hover {
+  text-decoration: underline;
+}
+
+.navbar-link svg {
+  margin-right: 5px;
+}
+
+.navbar-search::placeholder {
+  color: black; /* Establece el color del texto del placeholder a negro */
+}
+
+/* Menú para móvil */
+.navbar-mobile-menu {
+  display: none; /* Inicialmente oculto */
+}
+
+/* Para pantallas más pequeñas */
+@media (max-width: 768px) {
   .navbar-links {
-    display: flex;
-    gap: 10px;
-    color: #fff;
-    font-size: 14px;
-    margin-right: auto;
+    display: none; /* Oculta los enlaces en dispositivos pequeños */
+    flex-direction: column;
+    background-color: #191414;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    z-index: 100;
+    margin: 0;
   }
-  
-  .navbar-buttons {
-    display: flex;
-    gap: 10px;
-    margin-right: 20px;
+
+  .navbar-links.visible {
+    display: flex; /* Muestra los enlaces cuando el menú hamburguesa se activa */
   }
-  
-  .premium-button {
-    background-color: #fff;
-    color: #000;
-    border: none;
-    border-radius: 20px;
+
+  .navbar-mobile-menu {
+    display: block; /* Muestra el ícono del menú en dispositivos pequeños */
   }
-  
-  .install-button {
-    background-color: #000;
-    color: #fff;
-    border: none;
-    border-radius: 20px;
+
+  .navbar-link {
+    margin-left: 0;
+    margin-bottom: 20px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    text-align: center; /* Centra los enlaces */
   }
-  
-  .navbar-icons {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: #fff;
+
+  .navbar-search {
+    width: 100%;
+    margin-top: 10px;
   }
-  
-  .account-button {
-    color: #fff;
-    background: none;
-    border: none;
+}
+
+@media (max-width: 768px) {
+  .navbar-mobile-menu {
+      padding-top: 15px;
+      padding-right: 30px;
+      display: block;
   }
-  
+}
+
+@media (max-width: 768px) {
+  .navbar-search {
+      width: 90%;
+      margin-top: 10px;
+  }
+}

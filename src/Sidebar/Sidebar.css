@@ -1,0 +1,119 @@
+.custom-menu {
+  background-color: #2a2a2a;
+  color: #ffffff;
+  margin-top: 70px;
+  margin-left: 20px;
+  overflow: hidden;
+  width: 390px !important;
+}
+.ant-menu-submenu-title {
+  padding: 28px;
+}
+span.menu-label {
+  padding: 20px;
+  font-weight: bold;
+  font-family: var(--font-family);
+  font-size: var(--font-size-body);
+  align-items: center;
+}
+
+.menu-icon {
+  color: #ffffff;  
+  font-size: 25px !important;  
+  transition: color 0.3s ease, font-size 0.3s ease;  
+}
+
+.menu-icon:hover {
+  color: #1db954 !important;  
+  font-size: 24px;  
+}
+
+.custom-menu .ant-menu-item .ant-menu-item-icon {
+  font-size: 24px; 
+  color: white;   
+}
+.custom-menu .ant-menu-item:hover .ant-menu-item-icon {
+  font-size: 26px;  
+}
+.custom-menu .ant-menu-item .menu-icon {
+  font-size: 24px;  
+  color: white;     
+}
+
+.custom-menu .ant-menu-item:hover .menu-icon {
+  color: #1db954;    
+  font-size: 26px;   
+}
+
+/* Estilo personalizado para los ítems padre */
+.custom-menu .ant-menu-submenu {
+  border-bottom: 0.1px solid white;  /* Línea blanca arriba de los ítems padres */
+}
+.custom-menu .ant-menu-submenu {
+  border-radius: 0px;
+}
+
+.custom-menu {
+  background-color: #2a2a2a;
+  color: #ffffff;
+  margin-top: 70px;
+  margin-left: 20px;
+  overflow: hidden;
+  width: 390px !important;
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+  .custom-menu {
+    width: 100% !important;  /* El menú ocupa el 100% del ancho en pantallas pequeñas */
+    margin-left: 0;  /* Eliminar el margen izquierdo */
+  }
+
+  .custom-menu .ant-menu-item {
+    font-size: 14px;  /* Ajustar el tamaño de fuente */
+  }
+
+  .custom-menu .ant-menu-item .menu-icon {
+    font-size: 20px;  /* Reducir el tamaño del icono */
+  }
+
+  .custom-menu .ant-menu-submenu-title {
+    padding: 20px;  /* Reducir el padding para mejor uso del espacio */
+  }
+}
+
+/* Estilo del ícono en modo hover */
+.menu-icon:hover {
+  color: #1db954 !important;
+  font-size: 24px;
+}
+
+/* Estilos para el botón de hamburguesa (opcional) */
+@media (max-width: 768px) {
+  .ant-menu-inline {
+    display: none;  /* Ocultar el menú inline en pantallas pequeñas */
+  }
+
+  .ant-menu-mobile {
+    display: block; /* Mostrar el menú móvil */
+  }
+}
+
+.custom-menu .ant-menu-item-selected {
+  background-color: transparent !important; /* Sin fondo en el seleccionado */
+  color: #1db954 !important; /* Cambia el texto a verde en el seleccionado */
+}
+
+.custom-menu .ant-menu-item:hover {
+  background-color: transparent !important; /* Sin fondo en hover */
+  color: #1db954; /* Texto verde en hover */
+}
+.custom-menu .ant-menu-item .menu-icon:hover,
+.custom-menu .ant-menu-item-selected .menu-icon {
+  color: #1db954 !important;
+  font-size: 26px;
+}
+.custom-menu .ant-menu-item:hover {
+  color: #1db954 !important;    
+  font-size: 26px;   
+}

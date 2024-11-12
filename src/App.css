@@ -1,31 +1,49 @@
+/* Definición de variables globales */
+:root {
+  --spotify-font-family: 'Arial', sans-serif;
+  --encore-text-size-larger-3: 24px;
+  --color-background: #121212;
+  --color-text: #ffffff;
+  --color-accent: #1DB954;
+  --color-navbar: #333333;
+  --color-sidebar: #f4f4f4;
+  --color-card-background: #ffffff;
+  --color-card-text: #000000;
+  --font-family: 'Inter', sans-serif;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --font-size-title: 32px;
+  --font-size-subtitle: 24px;
+  --font-size-body: 16px;
+  --spacing-small: 8px;
+  --spacing-medium: 16px;
+  --spacing-large: 32px;
+}
+
+/* Estilos globales */
+html, body {
+  height: 100%; /* Asegura que el body y el html tengan el 100% de altura */
+  margin: 0; /* Elimina el margen por defecto */
+  padding: 0; /* Elimina el padding por defecto */
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-body);
+  color: var(--color-text);
+  background-color: var(--color-background); /* Fondo de la aplicación */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Estilo global para la clase .App */
 .App {
   display: grid;
-  grid-template-columns: 256px 1fr; /* 256px para el sidebar, 1fr para el contenido (home) */
-  grid-template-rows: 60px 1fr; /* 60px para el navbar, el contenido toma el resto */
-  grid-template-areas:
-    "navbar navbar"
-    "sidebar home";
-  height: 100vh;
-  background: linear-gradient(180deg, #1db954 2%, #191414 98%); /* Reducimos el verde al 5% */
-}
-
-.Navbar {
-  grid-area: navbar;
-  background-color: #333;
-  color: white;
-  padding: 10px;
-}
-
-.Sidebar {
-  grid-area: sidebar;
-  background-color: #f4f4f4;
-}
-
-.content {
-  grid-area: home;
-}
-
-.Home {
-  height: 100%;
-  overflow-y: auto;
+  grid-template-columns: 256px 1fr;
+  grid-template-rows: 60px 1fr;
+  grid-template-areas: "navbar navbar" "sidebar home";
+  height: 100vh; /* Asegura que el contenedor ocupe toda la altura */
+  background: linear-gradient(180deg, #1a7d3a 0%, #15642e 5%, #191414 40%);
 }

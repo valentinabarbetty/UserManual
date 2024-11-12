@@ -1,0 +1,36 @@
+.spotify-library-container {
+    background-color: #121212;
+    padding: 30px;
+    border-radius: 8px;
+  }
+  
+  .ant-card {
+    background-color: #121212;
+    border-radius: 8px;
+  }
+  
+  .ant-card-meta-title {
+    color: #fff !important;
+  }
+  
+  .ant-card-meta-description {
+    color: #b3b3b3 !important;
+  }
+  
+  .actions {
+    margin-top: 40px;
+  }
+  
+  .action-card {
+    border: none;
+    transition: transform 0.3s;
+  }
+  
+  .action-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .ant-card-cover img {
+    border-radius: 8px;
+  }
+  
