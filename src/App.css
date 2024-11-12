@@ -1,71 +1,31 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-/* En el App.css o el CSS global */
-.content {
-  padding-top: 80px; /* Ajusta según la altura del navbar */
-  text-align: center;
-}
-.App {
-  display: flex;
-  flex-direction: column; /* Esto coloca el navbar arriba */
+  display: grid;
+  grid-template-columns: 256px 1fr; /* 256px para el sidebar, 1fr para el contenido (home) */
+  grid-template-rows: 60px 1fr; /* 60px para el navbar, el contenido toma el resto */
+  grid-template-areas:
+    "navbar navbar"
+    "sidebar home";
   height: 100vh;
+  background: linear-gradient(180deg, #1db954 2%, #191414 98%); /* Reducimos el verde al 5% */
 }
 
 .Navbar {
-  flex: 0 1 auto; /* No debería crecer ni reducirse, solo ocupa el espacio necesario */
-  width: 100%;
+  grid-area: navbar;
+  background-color: #333;
+  color: white;
+  padding: 10px;
 }
 
 .Sidebar {
-  display: flex;
-  flex-direction: column;
-  flex: 0 1 250px; /* Fija el ancho del sidebar */
-  height: calc(100vh - 60px); /* Altura restante después del navbar */
+  grid-area: sidebar;
+  background-color: #f4f4f4;
 }
 
 .content {
-  display: flex;
-  flex: 1; /* Toma el espacio restante */
-  flex-direction: row; /* El contenido está al lado del sidebar */
+  grid-area: home;
 }
 
 .Home {
-  flex: 1; /* El contenido de Home toma el espacio disponible */
-  padding: 20px; /* Agrega un poco de espaciado */
+  height: 100%;
+  overflow-y: auto;
 }
