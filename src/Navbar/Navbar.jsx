@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <Header className="navbar">
       <div className="navbar-logo">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" alt="Spotify Logo" />
+        <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2023/05/Spotify_Primary_Logo_RGB_White.png" alt="Spotify Logo" />
       </div>
       <Input
         className="navbar-search"
@@ -28,18 +28,8 @@ const Navbar = () => {
         <span>Inicio</span>
         <span>Ayuda con un dispositivo</span>
       </div>
-      <div className="navbar-buttons">
-        <Button className="premium-button">Explorar Premium</Button>
-        <Button className="install-button">Instalar aplicación</Button>
-      </div>
-      <div className="navbar-icons">
-        <GlobalOutlined />
-        <Dropdown overlay={menu}>
-          <Button icon={<UserOutlined />} className="account-button">
-            Account <DownOutlined />
-          </Button>
-        </Dropdown>
-      </div>
+    
+      
     </Header>
   );
 };

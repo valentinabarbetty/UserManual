@@ -1,6 +1,7 @@
 import React from 'react';
 import { AppstoreOutlined, MailOutlined, SettingOutlined } from '@ant-design/icons';
 import { Menu } from 'antd';
+
 const items = [
   {
     key: 'sub1',
@@ -247,18 +248,12 @@ const items = [
     ],
   },
 ];
-const Sidebar = () => {
-  const onClick = (e) => {
-    console.log('click ', e);
-  };
+
+const Sidebar = ({ onMenuClick }) => {
   return (
     <Menu
-      onClick={onClick}
-      style={{
-        width: 256,
-        backgroundColor: '#2a2a2a', // Color de fondo
-        color: '#fffff', // Color de las letras
-      }}
+      onClick={onMenuClick}
+      style={{ width: 256, backgroundColor: '#2a2a2a', color: '#ffffff' }}
       defaultSelectedKeys={['1']}
       defaultOpenKeys={['sub1']}
       mode="inline"
@@ -267,4 +262,5 @@ const Sidebar = () => {
     />
   );
 };
+
 export default Sidebar;

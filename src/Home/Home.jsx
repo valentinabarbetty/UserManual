@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+import BoxText from '../BoxText/BoxText';
 
-const Home = () => {
+const Home = ({ content }) => {
   return (
-    <div>Home</div>
-  )
-}
+    <div style={{ padding: '20px' }}>
+      <BoxText text={content} />
+    </div>
+  );
+};
 
-export default Home
+export default Home;
