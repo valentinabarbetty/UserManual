@@ -23,11 +23,11 @@ const Registro = () => {
                 Abre la aplicación de Spotify en tu dispositivo móvil o
                 computadora, o visita{" "}
                 <a
-                  href="https://accounts.spotify.com/en/login"
+                  href="https://www.spotify.com/co-es/signup"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  https://accounts.spotify.com/en/login
+                  https://www.spotify.com/co-es/signup
                 </a>{" "}
                 en un navegador web.
               </p>
@@ -41,20 +41,18 @@ const Registro = () => {
       label: `Paso 2`,
       children: (
         <Card>
-          <h3>2. Ingresa tus datos de acceso</h3>
-          <div className="step-container">
-            <div className="sub-step-container">
-              <p>
-                Ingresa el correo y contraseña con el que te registraste, o
-                inicia sesión con Google, Facebook o Apple.
-              </p>
-              <div className="img-container">
-                <img
-                  src="/img/IniciaSesion.png"
-                  className="img"
-                  alt="Imagen centrada"
-                />
-              </div>
+          <h3>2. Ingresa tu correo electrónico</h3>
+          <div className="sub-step-container">
+            <p>
+              Ingresa tu dirección de correo electrónico y da clic en "Próximo".
+            </p>
+            <div className="img-container">
+              <img
+                src="/img/Registro.png"
+                className="img"
+                alt="Imagen centrada"
+                style={{ width: "40%" }}
+              />
             </div>
           </div>
         </Card>
@@ -65,41 +63,58 @@ const Registro = () => {
       label: `Paso 3`,
       children: (
         <Card>
-          <h3>2.1 Inicia sesión con tu número de teléfono</h3>
+          <h3>3. Agrega una nueva contraseña, recuerda que debe contener:</h3>
           <div className="sub-step-container">
-            <p>
-              Ingresa tu número de teléfono que tienes registrado en Spotify y
-              da clic en "Próximo". Asegúrate de tener el código de tu país correctamente.
-            </p>
+            <ul>1. 1 letra</ul>
+            <ul>2. 1 número o carácter especial (ejemplo: # ? ! &)</ul>
+            <ul>3. 10 caracteres</ul>
+            <p>Da clic en "Próximo".</p>
             <div className="img-container">
               <img
-                src="/img/ISnumero.png"
+                src="/img/RegistroContrasena.png"
                 className="img"
                 alt="Imagen centrada"
-              />
-            </div>
-            <p>
-              Te llegará al número de teléfono que ingresaste un mensaje como el siguiente. Si no lo
-              recibes, haz clic en "Obtener nuevo código".
-            </p>
-            <div className="img-container">
-              <img
-                src="/img/ISmnsj.jpg"
-                className="img"
-                alt="Imagen centrada"
-              />
-            </div>
-            <p>
-              Luego, ingresa el código de 6 dígitos que aparece en el mensaje y da clic en "Siguiente".
-            </p>
-            <div className="img-container">
-              <img
-                src="/img/IScodigo.png"
-                className="img"
-                alt="Imagen centrada"
+                style={{ width: "50%" }}
               />
             </div>
           </div>
+        </Card>
+      ),
+    },
+    {
+      key: "4",
+      label: `Paso 4`,
+      children: (
+        <Card>
+          <h3>4. Agrega tu información personal:</h3>
+          <p>Da clic en "Próximo".</p>
+          <div className="img-container">
+            <img
+              src="/img/ResgistroData.png"
+              className="img"
+              alt="Imagen centrada"
+              style={{ width: "40%" }}
+            />
+          </div>
+        </Card>
+      ),
+    },
+    {
+      key: "5",
+      label: `Paso 5`,
+      children: (
+        <Card>
+          <h3>4. Acepta los términos y condiciones:</h3>
+          <p>Da clic en "Próximo".</p>
+          <div className="img-container">
+            <img
+              src="/img/RegistroTyC.png"
+              className="img"
+              alt="Imagen centrada"
+              style={{ width: "50%" }}
+            />
+          </div>
+          <p>Felicidades, haz creado tu cuenta de Spotify.</p>
         </Card>
       ),
     },
@@ -115,14 +130,13 @@ const Registro = () => {
         tabBarStyle={{ color: "white" }} // Cambiar color de la letra
         className="custom-tabs" // Añadido para más control sobre los estilos
       />
-      {activeTab !== "3" && (
-      <Button
-  
-      className="spotify-button"  // Clase personalizada para el botón
-      onClick={handleNextTab}
-    >
-      Siguiente
-    </Button>
+      {activeTab !== "5" && (
+        <Button
+          className="spotify-button" // Clase personalizada para el botón
+          onClick={handleNextTab}
+        >
+          Siguiente
+        </Button>
       )}
     </div>
   );
