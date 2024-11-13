@@ -7,6 +7,7 @@ import IniciaSesion from '../Componentes/Cuenta/IniciaSesion/IniciaSesion';
 import Registro from '../Componentes/Cuenta/Registro';
 import Explora from '../Componentes/Explora/Explora';
 import Sonido from '../Componentes/Sonido/Sonido';
+import Comparte from '../Componentes/Comparte/Comparte';
 
 const Home = ({ content }) => {
   const renderContent = () => {
@@ -29,6 +30,8 @@ const Home = ({ content }) => {
         return <IniciaSesion key="9" />;
       case "10":  // Subitem "Inicia Sesión"
         return <Explora key="10" />;
+      case "11":
+        return <Comparte key="11" />;
       default:
         return <Whatisspotify key="default" />;
     }

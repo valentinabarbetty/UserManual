@@ -38,6 +38,11 @@ const items = [
     icon: <AudioOutlined className="menu-icon" />,
   },
   {
+    key: '11',
+    label: <span className="menu-label">Comparte tu Música</span>,
+    icon: <AudioOutlined className="menu-icon" />,
+  },
+  {
     key: '3',
     label: <span className="menu-label">Crea Listas de Reproducción</span>,
     icon: <UnorderedListOutlined className="menu-icon" />,

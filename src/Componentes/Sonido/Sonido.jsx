@@ -137,53 +137,7 @@ const Sonido = () => {
         </Card>
       ),
     },
-    {
-      key: "3",
-      label: `Explora nueva música`,
-      children: (
-        <Card>
-          <h2>Explora nueva música</h2>
-          <Divider style={{ borderColor: "white" }} />
-          <div className="sub-step-container">
-            <p>
-              Explora nueva música dando clic al ícono de Explorar, encontrarás
-              muchos géneros para escoger.
-            </p>
-            <div className="img-container">
-              <img
-                src="/img/explore.gif"
-                className="img"
-                alt="Imagen centrada"
-              />
-            </div>
-          </div>
-        </Card>
-      ),
-    },
-    {
-      key: "4",
-      label: `Podcasts`,
-      children: (
-        <Card>
-          <h2>Podcasts</h2>
-          <Divider style={{ borderColor: "white" }} />
-          <div className="sub-step-container">
-            <p>
-              Dirígete a la sección de Podcasts en el Inicio de la aplición,
-              encontraras podcasts de diferentes temas. que hayas escuchado
-              recientementente, así como recomendaciones personalizadas.
-            </p>
-            <div className="img-container">
-              <img
-                src="/img/Podcasts.gif"
-                className="img"
-                alt="Imagen centrada"
-              />
-            </div>
-          </div>
-        </Card>
-      ),
-    },
+  
   ];
 
   return (
@@ -196,7 +150,7 @@ const Sonido = () => {
         tabBarStyle={{ color: "white" }} // Cambiar color de la letra
         className="custom-tabs" // Añadido para más control sobre los estilos
       />
-      {activeTab !== "4" && (
+      {activeTab !== "2" && (
         <Button
           className="spotify-button" // Clase personalizada para el botón
           onClick={handleNextTab}
