@@ -9,6 +9,7 @@ const items = [
     label: <span className="menu-label">¿Qué es Spotify?</span>,
     icon: <SpotifyOutlined className="menu-icon" />,
   },
+
   {
     key: '7',
     label: <span className="menu-label">Tu Cuenta</span>,
@@ -25,12 +26,17 @@ const items = [
           },
         ],
   },
+
   {
     key: '10',
     label: <span className="menu-label">Explora tu Spotify</span>,
     icon: <AppstoreOutlined className="menu-icon" />,
   },
-
+  {
+    key: '6',
+    label: <span className="menu-label">Personaliza el Sonido</span>,
+    icon: <AudioOutlined className="menu-icon" />,
+  },
   {
     key: '3',
     label: <span className="menu-label">Crea Listas de Reproducción</span>,
@@ -46,11 +52,7 @@ const items = [
     label: <span className="menu-label">Escucha sin Conexión</span>,
     icon: <WifiOutlined className="menu-icon" />,
   },
-  {
-    key: '6',
-    label: <span className="menu-label">Personaliza la Calidad de Sonido</span>,
-    icon: <AudioOutlined className="menu-icon" />,
-  },
+
 
 ];
 
