@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Tabs, Button, Card } from "antd";
-import "./IniciaSesion.css";
+import "./Registro.css";
 
-const IniciaSesion = () => {
+const Registro = () => {
   const [activeTab, setActiveTab] = useState("1");
 
   const handleNextTab = () => {
@@ -128,4 +128,4 @@ const IniciaSesion = () => {
   );
 };
 
-export default IniciaSesion;
+export default Registro;

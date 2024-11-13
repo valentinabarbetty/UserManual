@@ -2,8 +2,9 @@ import React from 'react';
 import Whatisspotify from '../Componentes/Tema1/Whatisspotify';
 import SpotifyLibrary from '../Componentes/Tema4/SpotifyLibrary';
 import './Home.css';
-import Cuenta from '../Componentes/Cuenta/Cuenta';
+
 import IniciaSesion from '../Componentes/Cuenta/IniciaSesion/IniciaSesion';
+import Registro from '../Componentes/Cuenta/Registro';
 
 const Home = ({ content }) => {
   const renderContent = () => {
@@ -17,11 +18,11 @@ const Home = ({ content }) => {
       case "4":
         return <Whatisspotify key="4" />;
       case "5":
-        return <Cuenta key="5" />;
+        return <Registro key="5" />;
       case "6":
-        return <Cuenta key="6" />;
+        return <Registro key="6" />;
       case "8":  // Subitem "Regístrate"
-        return <Cuenta key="8" />;
+        return <Registro key="8" />;
       case "9":  // Subitem "Inicia Sesión"
         return <IniciaSesion key="9" />;
       default:
@@ -31,7 +32,9 @@ const Home = ({ content }) => {
 
   return (
     <div className="home-container">
-      {renderContent()}
+      <div className="content-wrapper">
+        {renderContent()}
+      </div>
     </div>
   );
 };
