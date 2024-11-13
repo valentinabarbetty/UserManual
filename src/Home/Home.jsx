@@ -5,6 +5,7 @@ import './Home.css';
 
 import IniciaSesion from '../Componentes/Cuenta/IniciaSesion/IniciaSesion';
 import Registro from '../Componentes/Cuenta/Registro';
+import Explora from '../Componentes/Explora/Explora';
 
 const Home = ({ content }) => {
   const renderContent = () => {
@@ -25,6 +26,8 @@ const Home = ({ content }) => {
         return <Registro key="8" />;
       case "9":  // Subitem "Inicia Sesión"
         return <IniciaSesion key="9" />;
+      case "10":  // Subitem "Inicia Sesión"
+        return <Explora key="10" />;
       default:
         return <Whatisspotify key="default" />;
     }
