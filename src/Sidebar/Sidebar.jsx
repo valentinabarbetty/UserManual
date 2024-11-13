@@ -10,6 +10,22 @@ const items = [
     icon: <SpotifyOutlined className="menu-icon" />,
   },
   {
+    key: '7',
+    label: <span className="menu-label">Tu Cuenta</span>,
+    icon: <UserOutlined className="menu-icon" />,
+    
+        children: [
+          {
+            key: '8',
+            label: 'Regístrate',
+          },
+          {
+            key: '9',
+            label: 'Inicia Sesión',
+          },
+        ],
+  },
+  {
     key: '2',
     label: <span className="menu-label">Explora la Biblioteca</span>,
     icon: <AppstoreOutlined className="menu-icon" />,
