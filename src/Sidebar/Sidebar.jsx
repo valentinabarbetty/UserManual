@@ -1,5 +1,5 @@
 import React from 'react';
-import { SpotifyOutlined, UserOutlined, WifiOutlined, AudioOutlined, UnorderedListOutlined, AppstoreOutlined } from '@ant-design/icons'; // Importando los íconos
+import { SpotifyOutlined, UserOutlined, WifiOutlined, AudioOutlined, UnorderedListOutlined, AppstoreOutlined, CreditCardOutlined, SoundOutlined, ShareAltOutlined } from '@ant-design/icons'; // Importando los íconos
 import { Menu } from 'antd';
 import './Sidebar.css';
 
@@ -26,6 +26,11 @@ const items = [
           },
         ],
   },
+  {
+    key: '12',
+    label: <span className="menu-label">Spotify Premium</span>,
+    icon: <CreditCardOutlined className="menu-icon" />,
+  },
 
   {
     key: '10',
@@ -35,7 +40,12 @@ const items = [
   {
     key: '6',
     label: <span className="menu-label">Personaliza el Sonido</span>,
-    icon: <AudioOutlined className="menu-icon" />,
+    icon: <SoundOutlined className="menu-icon" />,
+  },
+  {
+    key: '11',
+    label: <span className="menu-label">Comparte tu Música</span>,
+    icon: <ShareAltOutlined className="menu-icon" />,
   },
   {
     key: '3',
