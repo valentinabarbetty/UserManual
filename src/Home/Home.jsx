@@ -8,6 +8,7 @@ import Registro from '../Componentes/Cuenta/Registro';
 import Explora from '../Componentes/Explora/Explora';
 import Sonido from '../Componentes/Sonido/Sonido';
 import Comparte from '../Componentes/Comparte/Comparte';
+import Premium from '../Componentes/Premium/Premium';
 
 const Home = ({ content }) => {
   const renderContent = () => {
@@ -32,6 +33,8 @@ const Home = ({ content }) => {
         return <Explora key="10" />;
       case "11":
         return <Comparte key="11" />;
+      case "12":
+          return <Premium key="12" />;
       default:
         return <Whatisspotify key="default" />;
     }
