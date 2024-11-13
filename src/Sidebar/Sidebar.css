@@ -37,20 +37,12 @@ span.menu-label {
 }
 .custom-menu .ant-menu-item .menu-icon {
   font-size: 24px;  
-  color: white;     
+  color: rgb(255, 255, 255);  /* color icono*/  
 }
 
 .custom-menu .ant-menu-item:hover .menu-icon {
   color: #1db954;    
   font-size: 26px;   
-}
-
-/* Estilo personalizado para los ítems padre */
-.custom-menu .ant-menu-submenu {
-  border-bottom: 0.1px solid white;  /* Línea blanca arriba de los ítems padres */
-}
-.custom-menu .ant-menu-submenu {
-  border-radius: 0px;
 }
 
 .custom-menu {
@@ -116,4 +108,59 @@ span.menu-label {
 .custom-menu .ant-menu-item:hover {
   color: #1db954 !important;    
   font-size: 26px;   
+}
+
+.custom-menu .ant-menu-item{
+  color: #ffffff;
+}
+
+.ant-menu-submenu-title {
+  color: #ffffff !important;
+  margin-block: -1px !important;
+}
+
+.ant-menu-submenu-title:hover {
+  color: #1db954 !important;
+}
+
+span.ant-menu-title-content {
+  font-size: 16px; 
+  font-weight: bold;
+  font-family: var(--font-family);
+  font-size: var(--font-size-body);
+ 
+  
+}
+
+
+.ant-menu-submenu {
+
+}
+
+li.ant-menu-item.ant-menu-item {
+  border-bottom: 0.1px solid #7C7C7C;
+  border-radius: 0px;
+  padding: 24px;
+  width: calc(100% - 0px);
+  margin-inline: 0px;
+  margin-block: 0px;
+}
+
+li.ant-menu-item.ant-menu-item-only-child {
+  background: #2A2A2A;
+  border-bottom: 0px solid #7C7C7C;
+  
+}
+.custom-menu .ant-menu-submenu {
+  border-radius: 0px;
+  border-bottom: 0.1px solid #7C7C7C;
+}
+li.ant-menu-item:last-child {
+  border-bottom: none !important;
+}
+ul.ant-menu.ant-menu-root.ant-menu-inline.ant-menu-dark.custom-menu.css-dev-only-do-not-override-tpassh {
+  border-radius: 3px !important;
+}
+:where(.css-dev-only-do-not-override-tpassh).ant-menu-dark.ant-menu-inline .ant-menu-sub.ant-menu-inline, :where(.css-dev-only-do-not-override-tpassh).ant-menu-dark>.ant-menu.ant-menu-inline .ant-menu-sub.ant-menu-inline {
+   background: #2A2A2A !important;
 }

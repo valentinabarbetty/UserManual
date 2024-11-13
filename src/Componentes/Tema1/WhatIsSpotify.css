@@ -1,46 +1,16 @@
-/* WhatIsSpotify.css */
-
-.spotify-library-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  background-color: #121212; /* Fondo oscuro tipo Spotify */
-  color: #ffffff; /* Texto blanco */
-  min-height: 100vh;
-}
-
-.ant-card {
-  background-color: #1c1c1c; /* Color oscuro para la tarjeta */
-  border: none;
-  color: #ffffff;
-}
-
-.ant-card-title {
-  font-size: 1.8em;
+.ant-tabs-nav-list {
   font-weight: bold;
-  color: #1db954; /* Verde de Spotify */
+  font-family: var(--font-family);
+  font-size: var(--font-size-body);
 }
 
-.ant-card p, .ant-card h2 {
-  color: #ffffff;
-  line-height: 1.6;
+:where(.css-dev-only-do-not-override-tpassh).ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #1DB954 !important;
+  text-shadow: 0 0 0.25px currentcolor;
 }
 
-.ant-list-item {
-  color: #ffffff;
-}
-
-@media (max-width: 768px) {
-  .spotify-library-container {
-    padding: 10px;
-  }
-
-  .ant-card {
-    font-size: 0.9em;
-  }
-
-  .ant-card-title {
-    font-size: 1.5em;
-  }
+:where(.css-dev-only-do-not-override-tpassh).ant-tabs .ant-tabs-ink-bar {
+  position: absolute;
+  background: #1DB954;
+  pointer-events: none;
 }

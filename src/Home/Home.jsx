@@ -1,6 +1,7 @@
 import React from 'react';
 import Whatisspotify from '../Componentes/Tema1/Whatisspotify';
 import SpotifyLibrary from '../Componentes/Tema4/SpotifyLibrary';
+import { Row, Col } from 'antd';
 import './Home.css';
 
 import IniciaSesion from '../Componentes/Cuenta/IniciaSesion/IniciaSesion';
@@ -22,11 +23,11 @@ const Home = ({ content }) => {
         return <Registro key="5" />;
       case "6":
         return <Registro key="6" />;
-      case "8":  // Subitem "Regístrate"
+      case "8":
         return <Registro key="8" />;
-      case "9":  // Subitem "Inicia Sesión"
+      case "9":
         return <IniciaSesion key="9" />;
-      case "10":  // Subitem "Inicia Sesión"
+      case "10":
         return <Explora key="10" />;
       default:
         return <Whatisspotify key="default" />;
@@ -34,11 +35,11 @@ const Home = ({ content }) => {
   };
 
   return (
-    <div className="home-container">
-      <div className="content-wrapper">
+    <Row justify="center" className="home-container">
+      <Col xs={24} sm={20} md={18} lg={16} xl={22} className="content-wrapper">
         {renderContent()}
-      </div>
-    </div>
+      </Col>
+    </Row>
   );
 };
 

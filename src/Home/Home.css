@@ -1,24 +1,27 @@
 .home-container {
   padding: 20px;
-  margin-top: 50px;
-  width: 80%;
-  padding-left: 240px;
   border-radius: 8px;
-  height: 500px; /* Cambié a una altura fija para probar */
-  overflow-y: auto; /* Esto debería habilitar el scroll vertical */
+  height: auto;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 150px;
 }
 
 .content-wrapper {
-  padding: 10px;
-  /* Si necesitas más espaciado dentro del contenido */
-  height: auto;  /* Deja que el contenido crezca según sea necesario */
+  padding: 20px;
+  border-radius: 8px;
 }
 
 /* Media Query para pantallas pequeñas */
 @media (max-width: 768px) {
   .home-container {
-    padding-left: 20px;  /* Reducir el padding para pantallas pequeñas */
-    width: 100%;  /* Hacer que el contenedor ocupe el 100% del ancho */
-    height: auto;  /* Asegura que el contenedor se ajuste en pantallas pequeñas */
+    padding: 10px;
+  }
+  
+  .content-wrapper {
+    padding: 10px;
+    width: 100%;
   }
 }
