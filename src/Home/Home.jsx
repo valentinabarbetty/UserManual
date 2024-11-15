@@ -116,7 +116,7 @@ const Home = ({ content }) => {
               justifyContent: 'center',
             }}
             onClick={showModal}
-            icon={<YoutubeOutlined style={{ fontSize: '28px' }} />}
+            icon={<YoutubeOutlined style={{ fontSize: '28px', color:"#fff" }} />}
           />
         </Tooltip>
       )}

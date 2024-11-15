@@ -99,3 +99,11 @@ span.anticon.anticon-close.ant-modal-close-icon {
   font-size: 24px;
   color: red;
 }
+
+button.css-dev-only-do-not-override-49qm.ant-float-btn.float-button.ant-float-btn-default.ant-float-btn-square {
+  background: red !important;
+}
+
+.ant-float-btn-body {
+  background-color: red !important;
+}
