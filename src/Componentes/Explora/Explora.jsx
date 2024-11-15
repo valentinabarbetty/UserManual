@@ -100,8 +100,8 @@ const Explora = () => {
           <div className="sub-step-container">
             <p>
               Dirígete a la sección de Podcasts en el Inicio de la aplición,
-              encontraras podcasts de diferentes temas. que hayas escuchado
-              recientementente, así como recomendaciones personalizadas.
+              encontrarás podcasts de diferentes temas, que hayas escuchado
+              recientemente, así como recomendaciones personalizadas.
             </p>
             <div className="img-container">
               <img

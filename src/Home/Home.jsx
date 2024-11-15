@@ -4,7 +4,6 @@ import ReactPlayer from 'react-player';
 import './Home.css';
 import { YoutubeOutlined } from '@ant-design/icons';
 
-
 import Whatisspotify from '../Componentes/Tema1/Whatisspotify';
 import Playlist from '../Componentes/Tema2/Playlist';
 import FollowArtists from '../Componentes/Tema3/FollowArtists';
@@ -15,13 +14,18 @@ import Registro from '../Componentes/Cuenta/Registro';
 import Explora from '../Componentes/Explora/Explora';
 import Comparte from '../Componentes/Comparte/Comparte';
 import Premium from '../Componentes/Premium/Premium';
+import Sonido from '../Componentes/Sonido/Sonido';
 
 const Home = ({ content }) => {
   const [isModalVisible, setIsModalVisible] = useState(false);
-  const [isPlaying, setIsPlaying] = useState(true);  
+  const [isPlaying, setIsPlaying] = useState(true);
   const videoUrls = {
     "9": "https://youtu.be/QMiJFQeEjis",
     "8": "https://youtu.be/M-kNHUVc4sQ",
+    "12": "https://youtu.be/U-b7s8yi2u4",
+    "10": "https://youtu.be/FZX8MXmomPU",
+    "6": "https://youtu.be/sViVKVw4gcY",
+    "3": "https://youtu.be/m-7NNPqk66w"
   };
 
   const showModal = () => {
@@ -47,7 +51,7 @@ const Home = ({ content }) => {
       case "5":
         return <OfflineListening key="5" />;
       case "6":
-        return <Registro key="6" />;
+        return <Sonido key="6" />;
       case "8":
         return <Registro key="8" />;
       case "9":
@@ -72,7 +76,7 @@ const Home = ({ content }) => {
   }, [isModalVisible]);
 
   // Determinar el URL del video según el valor de `content`
-  const videoUrl = videoUrls[content] || videoUrls["1"];  // Si `content` no es válido, carga el video 1 por defecto.
+  const videoUrl = videoUrls[content];
 
   return (
     <Row justify="center" className="home-container">
@@ -80,23 +84,25 @@ const Home = ({ content }) => {
         {renderContent()}
       </Col>
 
-      <FloatButton
-        shape="square"
-        type="primary"
-        style={{
-          insetInlineEnd: 24,
-          position: 'fixed',
-          bottom: '100px',
-          right: '50px',
-          width: '60px',
-          height: '50px',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-        }}
-        onClick={showModal}
-        icon={<YoutubeOutlined style={{ fontSize: '28px', }} />}
-      />
+      {videoUrl && (
+        <FloatButton
+          shape="square"
+          type="primary"
+          style={{
+            insetInlineEnd: 24,
+            position: 'fixed',
+            bottom: '100px',
+            right: '50px',
+            width: '60px',
+            height: '50px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}
+          onClick={showModal}
+          icon={<YoutubeOutlined style={{ fontSize: '28px' }} />}
+        />
+      )}
 
       <Modal
         className="modal"
