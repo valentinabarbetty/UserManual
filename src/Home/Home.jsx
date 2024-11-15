@@ -105,6 +105,7 @@ const Home = ({ content }) => {
           className='float-button'
             shape="square"
             style={{
+              background: 'red',
               insetInlineEnd: 24,
               position: 'fixed',
               bottom: '100px',
