@@ -39,9 +39,11 @@
 .footer-text a:hover {
   text-decoration: underline !important;
 }
-span.ant-typography.footer-text.css-dev-only-do-not-override-tpassh {
-    color: white !important;
-    font-weight: bold !important;
-    font-family: var(--font-family) !important;
-    font-size: var(--font-size-body) !important;
+
+
+span.ant-typography.footer-text.css-dev-only-do-not-override-49qm {
+  color: white !important;
+  font-weight: bold !important;
+  font-family: var(--font-family) !important;
+  font-size: var(--font-size-body) !important;
 }
