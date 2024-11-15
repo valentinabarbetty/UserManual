@@ -107,3 +107,11 @@ button.css-dev-only-do-not-override-49qm.ant-float-btn.float-button.ant-float-bt
 .ant-float-btn-body {
   background-color: red !important;
 }
+
+button.css-49qm.ant-float-btn.ant-float-btn-primary.ant-float-btn-square {
+  background: red !important;
+}
+
+.ant-float-btn-body {
+  background-color: red !important;
+}
