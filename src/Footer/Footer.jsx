@@ -7,13 +7,14 @@ const { Text } = Typography;
 const Footer = () => {
   return (
     <div className="footer">
-      <Row justify="center" align="middle" style={{ width: '100%' }}>
-        {/* Columna de texto */}
-        <Col xs={24} sm={12} md={8} lg={6} className="footer-column">
-          <Text className="footer-text">© 2024 Spotify BV</Text>
-        </Col>
-      </Row>
-    </div>
+  <Row justify="center" align="middle" style={{ width: '100%' }}>
+    {/* Columna de texto */}
+    <Col xs={24} sm={12} md={8} lg={6} className="footer-column">
+      <Text className="footer-text">© 2024 Spotify BV</Text>
+    </Col>
+  </Row>
+</div>
+
   );
 };
 

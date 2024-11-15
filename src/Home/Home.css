@@ -36,10 +36,10 @@
 }
 
 button.css-dev-only-do-not-override-49qm.ant-float-btn.ant-float-btn-primary.ant-float-btn-square {
-background-color: red;
+background-color: red !important;
 }
 
-:where(.css-dev-only-do-not-override-49qm).ant-float-btn-primary .ant-float-btn-body {
+.ant-float-btn-primary .ant-float-btn-body {
   background-color: red !important;
 }
 

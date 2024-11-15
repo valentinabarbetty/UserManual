@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Row, Col, Modal, FloatButton, Divider } from 'antd';
+import { Row, Col, Modal, FloatButton, Divider, Tooltip } from 'antd';
 import ReactPlayer from 'react-player';
 import './Home.css';
 import { YoutubeOutlined } from '@ant-design/icons';
@@ -19,6 +19,7 @@ import Sonido from '../Componentes/Sonido/Sonido';
 const Home = ({ content }) => {
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [isPlaying, setIsPlaying] = useState(true);
+  const [showTooltip, setShowTooltip] = useState(false); // Estado inicial para el Tooltip
   const videoUrls = {
     "9": "https://youtu.be/QMiJFQeEjis",
     "8": "https://youtu.be/M-kNHUVc4sQ",
@@ -27,6 +28,18 @@ const Home = ({ content }) => {
     "6": "https://youtu.be/sViVKVw4gcY",
     "3": "https://youtu.be/m-7NNPqk66w"
   };
+
+  useEffect(() => {
+    // Cada vez que cambie `content`, mostrar el Tooltip nuevamente
+    if (videoUrls[content]) {
+      setShowTooltip(true); // Mostrar el Tooltip
+      const timer = setTimeout(() => {
+        setShowTooltip(false); // Ocultarlo después de 5 segundos
+      }, 5000);
+
+      return () => clearTimeout(timer); // Limpiar el temporizador
+    }
+  }, [content]); // Dependencia en `content`
 
   const showModal = () => {
     setIsModalVisible(true);
@@ -75,7 +88,6 @@ const Home = ({ content }) => {
     }
   }, [isModalVisible]);
 
-  // Determinar el URL del video según el valor de `content`
   const videoUrl = videoUrls[content];
 
   return (
@@ -85,23 +97,29 @@ const Home = ({ content }) => {
       </Col>
 
       {videoUrl && (
-        <FloatButton
-          shape="square"
-          type="primary"
-          style={{
-            insetInlineEnd: 24,
-            position: 'fixed',
-            bottom: '100px',
-            right: '50px',
-            width: '60px',
-            height: '50px',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-          }}
-          onClick={showModal}
-          icon={<YoutubeOutlined style={{ fontSize: '28px' }} />}
-        />
+        <Tooltip 
+          title="Haz clic aquí para ver el tutorial" 
+          visible={showTooltip} // Controlamos la visibilidad del Tooltip con el estado
+        >
+          <FloatButton
+          className='float-button'
+            shape="square"
+            type="primary"
+            style={{
+              insetInlineEnd: 24,
+              position: 'fixed',
+              bottom: '100px',
+              right: '50px',
+              width: '60px',
+              height: '50px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+            }}
+            onClick={showModal}
+            icon={<YoutubeOutlined style={{ fontSize: '28px' }} />}
+          />
+        </Tooltip>
       )}
 
       <Modal
@@ -114,7 +132,7 @@ const Home = ({ content }) => {
       >
         <Divider />
         <ReactPlayer
-          url={videoUrl}  // URL del video determinado por `content`
+          url={videoUrl}
           playing={isPlaying} 
           controls
           width="100%"
