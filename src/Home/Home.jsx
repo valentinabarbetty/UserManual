@@ -104,7 +104,6 @@ const Home = ({ content }) => {
           <FloatButton
           className='float-button'
             shape="square"
-            type="primary"
             style={{
               insetInlineEnd: 24,
               position: 'fixed',
