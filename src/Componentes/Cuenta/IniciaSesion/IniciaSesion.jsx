@@ -112,13 +112,13 @@ const IniciaSesion = () => {
         onChange={setActiveTab}
         items={items}
         tabPosition="top"
-        tabBarStyle={{ color: "white" }} // Cambiar color de la letra
-        className="custom-tabs" // Añadido para más control sobre los estilos
+        tabBarStyle={{ color: "white" }} 
+        className="custom-tabs" 
       />
       {activeTab !== "3" && (
       <Button
   
-      className="spotify-button"  // Clase personalizada para el botón
+      className="spotify-button"  
       onClick={handleNextTab}
     >
       Siguiente

@@ -1,17 +1,43 @@
 import React, { useState } from 'react';
-import { Layout, Input, Menu, Dropdown } from 'antd';
-import { SearchOutlined, UserOutlined, DownOutlined, MenuOutlined } from '@ant-design/icons';
+import { Layout, Input, AutoComplete } from 'antd';
+import { SearchOutlined, MenuOutlined } from '@ant-design/icons';
 import './Navbar.css';
 
 const { Header } = Layout;
 
-const Navbar = () => {
+const Navbar = ({onSearch}) => {
   const [visible, setVisible] = useState(false);
+  const [options, setOptions] = useState([]);
 
   const handleMenuClick = () => {
     setVisible(!visible);
   };
 
+  const handleSearchChange = (value) => {
+    const filteredOptions = Object.keys(keywordMap)
+      .filter((key) => key.toLowerCase().includes(value.toLowerCase()))
+      .map((key) => ({ value: key }));
+    setOptions(filteredOptions);
+  };
+
+  const handleSelect = (value) => {
+    onSearch(value); // Llama a la función de búsqueda con el valor seleccionado
+  };
+
+
+  const keywordMap = {
+    "¿Qué es Spotify?": "1",
+    "Tu Cuenta": "7",
+    "Spotify Premium": "12",
+    "Explora tu Spotify": "10",
+    "Personaliza el Sonido": "6",
+    "Comparte tu Música": "11",
+    "Listas de Reproducción": "3",
+    "Sigue Nuevos Artistas": "4",
+    "Escucha sin Conexión": "5",
+    "Regístrate": "8",
+    "Inicia Sesión": "9"
+  };
   return (
     <Header className="navbar">
       <div className="navbar-logo">
@@ -25,11 +51,18 @@ const Navbar = () => {
         <span className="navbar-logo-text">Spotify</span>
       </div>
       <div className="navbar-options">
+      <AutoComplete
+          className="navbar-search"
+         
+          options={options}
+          onSearch={handleSearchChange} // Muestra sugerencias
+          onSelect={handleSelect} // Selecciona la opción
+        >
         <Input
           className="navbar-search"
           placeholder="Buscar"
           prefix={<SearchOutlined />}
-        />
+        /></AutoComplete>
       </div>
       <div className={`navbar-links ${visible ? 'visible' : ''}`}>
         <span className="navbar-link">Profile</span>

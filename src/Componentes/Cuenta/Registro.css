@@ -1,8 +1,6 @@
-/* WhatIsSpotify.css */
-
-  
+ 
 .ant-card {
-  background-color: #1c1c1c; /* Color oscuro para la tarjeta */
+  background-color: #1c1c1c; 
   border: none;
   color: #ffffff;
 }
@@ -17,7 +15,7 @@
 .ant-card-title {
   font-size: 1.8em;
   font-weight: bold;
-  color: #ffffff !important; /* Cambia el color a blanco */
+  color: #ffffff !important; 
 }
 .ant-card p, .ant-card h2 {
   color: #ffffff;
@@ -50,30 +48,27 @@
   padding: 20px;
   color: #ffffff;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  max-width: 100%; /* Para que ocupe el 100% del espacio disponible */
-  width: 100%; /* Ancho completo dentro de la columna */
+  max-width: 100%; 
+  width: 100%;
 }
 .img-container {
-  display: flex;                /* Usamos flexbox */
-  justify-content: center;      /* Centrado horizontal */
-  align-items: center;          /* Centrado vertical */
-            /* Asegura que el contenedor ocupe toda la altura de la ventana */
+  display: flex;               
+  justify-content: center;    
+  align-items: center;         
+            
 }
 .custom-tabs .ant-tabs-nav .ant-tabs-tab {
-  color: white !important; /* Fuerza que el color del texto sea blanco */
+  color: white !important; 
 }
 
 .custom-tabs .ant-tabs-nav .ant-tabs-tab-active {
-  color: white !important; /* Mantén el color blanco incluso en el tab activo */
+  color: white !important; 
 }
 
-.custom-tabs .ant-tabs-nav {
-  /* Fondo azul para la barra de tabs */
-}
 .img {
-  width: 70%;                   /* Ancho de la imagen */
-  height: 70%;                  /* Altura de la imagen */
-  object-fit: contain;          /* Mantiene la relación de aspecto de la imagen */
+  width: 70%;                 
+  height: 70%;                
+  object-fit: contain;        
 }
 .custom-title {
   font-size: 2em;
@@ -92,7 +87,7 @@
 
 .step-container {
   margin-bottom: 20px;
-  padding-left: 20px; /* Indentación de los pasos principales */
+  padding-left: 20px;
 }
 
 .pasos {
@@ -104,29 +99,29 @@
   gap: 6px;
 }
 .spotify-button {
-  background-color: #1DB954; /* Verde característico de Spotify */
-  border: none; /* Elimina el borde */
-  border-radius: 50px; /* Hace que el botón sea redondeado */
-  color: rgb(0, 0, 0); /* Color de texto blanco */
-  padding: 10px 20px; /* Espaciado interno */
-  font-size: 16px; /* Tamaño de texto */
+  background-color: #1DB954; 
+  border: none; 
+  border-radius: 50px; 
+  color: rgb(0, 0, 0); 
+  padding: 10px 20px; 
+  font-size: 16px; 
   width: 20%; 
-  margin-top: 20px;font-weight: bold;/* Ancho completo (opcional, puedes ajustarlo a tu preferencia) */
+  margin-top: 20px;font-weight: bold;
 }
 
 .spotify-button:hover {
-  background-color: #45d778 !important; /* Efecto hover con un verde más brillante */
+  background-color: #45d778 !important; 
   cursor: pointer;
   color: black !important;
 }
 
 .spotify-button:focus {
-  outline: none; /* Elimina el borde cuando se hace foco en el botón */
+  outline: none; 
 }
 
 .sub-step-container {
   margin-bottom: 20px;
-  padding-left: 40px; /* Mayor indentación para los subpasos */
+  padding-left: 40px;
 }
 
 .sub-step {
@@ -148,9 +143,6 @@ a:hover {
 p {
   line-height: 1.6;
 }
-
-
-
 
 
 @media (max-width: 768px) {

@@ -1,5 +1,5 @@
 .footer {
-  background-color: #0d0d0e;  /* Fondo oscuro similar al de Spotify */
+  background-color: #0d0d0e !important;  /* Fondo oscuro similar al de Spotify */
   padding: 20px 0;
   position: fixed;  /* Fijo en la parte inferior */
   bottom: 0;
@@ -8,7 +8,7 @@
   z-index: 1000;
   display: flex;
   justify-content: center;  /* Alinea los elementos en el centro */
-  color: #ffffff;  /* Texto blanco */
+  color: #ffffff !important;  /* Texto blanco */
   font-family: 'Circular Std', sans-serif;  /* Tipografía de Spotify */
 }
 
@@ -23,25 +23,25 @@
 
 /* Estilo para los textos */
 .footer-text {
-  font-size: 14px;
-  text-align: center;
+  font-size: 14px !important;
+  text-align: center !important;
 }
 
 /* Asegura que todos los enlaces sean blancos */
 .footer-text a {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 14px;
-  margin: 0 10px;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  font-size: 14px !important;
+  margin: 0 10px !important;
 }
 
 /* Efecto hover para enlaces */
 .footer-text a:hover {
-  text-decoration: underline;
+  text-decoration: underline !important;
 }
 span.ant-typography.footer-text.css-dev-only-do-not-override-tpassh {
-    color: white;
-    font-weight: bold;
-    font-family: var(--font-family);
-    font-size: var(--font-size-body);
+    color: white !important;
+    font-weight: bold !important;
+    font-family: var(--font-family) !important;
+    font-size: var(--font-size-body) !important;
 }

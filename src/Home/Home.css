@@ -34,3 +34,68 @@
     height: 10vh; /* Aún más pequeño en pantallas móviles */
   }
 }
+
+button.css-dev-only-do-not-override-49qm.ant-float-btn.ant-float-btn-primary.ant-float-btn-square {
+background-color: red;
+}
+
+:where(.css-dev-only-do-not-override-49qm).ant-float-btn-primary .ant-float-btn-body {
+  background-color: red !important;
+}
+
+.ant-float-btn-content {
+  padding: 1px 13px !important;
+}
+
+.ant-float-btn-icon {
+  padding-right: 27px;
+}
+
+
+/* Estilos para el modal */
+.modal .ant-modal-content {
+  background-color: #1c1c1c; /* Fondo del modal */
+}
+
+.modal .ant-modal-header {
+  background-color: #1c1c1c; /* Fondo del header */
+  border-bottom: none; /* Quitar borde en el header */
+}
+
+.modal .ant-modal-title {
+  color: white; /* Título en color blanco */
+  font-weight: bold;
+  font-family: var(--font-family) !important; /* Usando la variable de fuente, puedes cambiarla si es necesario */
+  font-size: var(--font-size-body) !important; /* Usa la variable de tamaño de fuente */
+  outline: none !important;
+  transition: all 0.3s !important;
+}
+
+.modal .ant-modal-body {
+  color: white; /* Contenido del modal en color blanco */
+}
+
+.modal .ant-modal-footer {
+  background-color: #1c1c1c; /* Fondo del footer */
+  border-top: none; /* Quitar borde superior del footer */
+}
+
+/* Estilo para el Divider */
+.modal .ant-divider {
+  border-color: #1DB954; /* Divider con borde verde */
+}
+/* Establece la altura del modal */
+.modal .ant-modal-content {
+  height: 500px;  /* Aquí defines la altura */
+  overflow: auto; /* Agrega un scrollbar si el contenido excede la altura */
+}
+
+/* Puedes ajustar la altura de la cabecera, cuerpo, o footer si lo necesitas */
+.modal .ant-modal-body {
+  height: 80%;  /* Ajustar el contenido para que no exceda el modal */
+  
+}
+span.anticon.anticon-close.ant-modal-close-icon {
+  font-size: 24px;
+  color: red;
+}

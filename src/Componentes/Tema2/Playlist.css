@@ -1,20 +1,20 @@
-:where(.css-dev-only-do-not-override-tpassh).ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
-    color: #1db954;
-    text-shadow: 0 0 0.25px currentcolor;
-    font-weight: bold;
-    font-family: var(--font-family);
-    font-size: var(--font-size-body);
+.ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: #1db954 !important;
+    text-shadow: 0 0 0.25px currentcolor !important;
+    font-weight: bold !important;
+    font-family: var(--font-family) !important;
+    font-size: var(--font-size-body) !important;
 }
 
-:where(.css-dev-only-do-not-override-tpassh).ant-tabs .ant-tabs-ink-bar {
-    position: absolute;
-    background: #1db748;
-    pointer-events: none;
+.ant-tabs .ant-tabs-ink-bar {
+    position: absolute !important;
+    background: #1db748 !important;
+    pointer-events: none !important;
 }
-:where(.css-dev-only-do-not-override-tpassh).ant-tabs .ant-tabs-tab-btn {
+.ant-tabs .ant-tabs-tab-btn {
     font-weight: bold;
-    font-family: var(--font-family);
-    font-size: var(--font-size-body);
-    outline: none;
-    transition: all 0.3s;
+    font-family: var(--font-family) !important;
+    font-size: var(--font-size-body) !important;
+    outline: none !important;
+    transition: all 0.3s !important;
 }

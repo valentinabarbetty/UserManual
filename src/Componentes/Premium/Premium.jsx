@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Tabs, Button, Card, Divider } from "antd";
+import { Tabs, Button, Card } from "antd";
 import "./Premium.css";
 
 const Premium = () => {

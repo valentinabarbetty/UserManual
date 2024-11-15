@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Tabs, Button, Card, Divider } from "antd";
+import { Tabs, Card, Divider } from "antd";
 import "./FollowArtists.css";
 
 const FollowArtists = () => {

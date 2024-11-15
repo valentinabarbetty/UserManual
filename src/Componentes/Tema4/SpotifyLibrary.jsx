@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, Row, Col, Typography } from 'antd';
 import { AppstoreOutlined, SearchOutlined, PlayCircleOutlined } from '@ant-design/icons';
-import './SpotifyLibrary.css';  // Importamos el CSS para estilizar
+import './SpotifyLibrary.css';  
 
 const { Title, Text } = Typography;
 

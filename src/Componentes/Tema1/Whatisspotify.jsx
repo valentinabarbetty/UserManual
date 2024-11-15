@@ -1,9 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import { Card, Divider, Row, Col, Image, Carousel } from "antd";
-import { CommentOutlined, CustomerServiceOutlined } from "@ant-design/icons";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
 
 import "./WhatIsSpotify.css";
 
