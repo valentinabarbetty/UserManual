@@ -50,7 +50,7 @@ const items = [
   },
   {
     key: '3',
-    label: <span className="menu-label">Crea Listas de Reproducción</span>,
+    label: <span className="menu-label">Listas de Reproducción</span>,
     icon: <UnorderedListOutlined className="menu-icon" />,
   },
   {

@@ -1,7 +1,7 @@
 .home-container {
   padding: 20px;
   border-radius: 8px;
-  height: auto;
+  height: 80vh; /* Usamos vh para hacer la altura responsiva */
   overflow-y: auto;
   display: flex;
   justify-content: center;
@@ -12,16 +12,25 @@
 .content-wrapper {
   padding: 20px;
   border-radius: 8px;
+  width: 100%; /* Asegúrate de que ocupe todo el ancho del contenedor */
 }
 
-/* Media Query para pantallas pequeñas */
+/* Media Query para pantallas más pequeñas */
 @media (max-width: 768px) {
   .home-container {
     padding: 10px;
+    height: 60vh; /* Menor altura para pantallas pequeñas */
   }
   
   .content-wrapper {
     padding: 10px;
     width: 100%;
+  }
+}
+
+/* Media Query para pantallas extra pequeñas (móviles) */
+@media (max-width: 480px) {
+  .home-container {
+    height: 10vh; /* Aún más pequeño en pantallas móviles */
   }
 }

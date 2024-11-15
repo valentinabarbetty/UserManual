@@ -1,6 +1,12 @@
 import React from 'react';
 import Whatisspotify from '../Componentes/Tema1/Whatisspotify';
+import Playlist from '../Componentes/Tema2/Playlist';
+import FollowArtists from '../Componentes/Tema3/FollowArtists';
 import SpotifyLibrary from '../Componentes/Tema4/SpotifyLibrary';
+import OfflineListening from '../Componentes/Tema5/OfflineListening';
+
+
+
 import { Row, Col } from 'antd';
 import './Home.css';
 
@@ -19,11 +25,11 @@ const Home = ({ content }) => {
       case "2":
         return <SpotifyLibrary key="2" />;
       case "3":
-        return <Whatisspotify key="3" />;
+        return <Playlist key="3" />;
       case "4":
-        return <Whatisspotify key="4" />;
+        return <FollowArtists key="4" />;
       case "5":
-        return <Registro key="5" />;
+        return <OfflineListening key="5" />;
       case "6":
         return <Registro key="6" />;
       case "8":

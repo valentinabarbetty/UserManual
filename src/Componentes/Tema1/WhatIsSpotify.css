@@ -1,16 +1,88 @@
-.ant-tabs-nav-list {
-  font-weight: bold;
-  font-family: var(--font-family);
-  font-size: var(--font-size-body);
+
+.ant-card {
+  padding-left: 20px;
+  background-color: #1c1c1c;
+  border: none;
+  color: #ffffff;
+  width: 100%;
+  max-width: 100%;
+  min-height: 400px;
+  height: auto;
+  box-sizing: border-box;
 }
 
-:where(.css-dev-only-do-not-override-tpassh).ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
-  color: #1DB954 !important;
-  text-shadow: 0 0 0.25px currentcolor;
+.title {
+  font-size: 32px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 16px;
 }
 
-:where(.css-dev-only-do-not-override-tpassh).ant-tabs .ant-tabs-ink-bar {
-  position: absolute;
-  background: #1DB954;
-  pointer-events: none;
+
+.description {
+  font-size: 16px;
+  color: #B3B3B3;
+  line-height: 1.6;
+  margin-top: 20px;
+}
+
+.media-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.media-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.slick-carousel .slick-slide img {
+  width: 100%;
+  height: auto;
+}
+
+
+@media (max-width: 768px) {
+  .ant-card {
+    padding: 15px;
+  }
+
+  .title {
+    font-size: 24px; /* Reduce el tamaño del título */
+  }
+
+  .description {
+    font-size: 14px; /* Reduce el tamaño de la descripción */
+  }
+
+  .ant-col {
+    padding: 0; /* Elimina el padding en columnas pequeñas */
+  }
+
+  /* Carousel responsive */
+  .slick-carousel {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .slick-slide {
+    width: 100% !important; /* Forzar a que el carousel sea de 100% de ancho */
+  }
+
+  .slick-list {
+    margin: 0 auto;
+  }
+
+  .slick-prev, .slick-next {
+    font-size: 18px; /* Reduce el tamaño de los botones de navegación */
+  }
+  
+  .spotify-player {
+    width: 100% !important; /* Asegura que el iframe ocupe todo el ancho */
+    height: auto;
+    border-radius: 12px;
+  }
 }
