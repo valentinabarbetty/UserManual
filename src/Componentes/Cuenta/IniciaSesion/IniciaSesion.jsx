@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Tabs, Button, Card } from "antd";
+import { Tabs, Button, Card, Divider } from "antd";
 import "./IniciaSesion.css";
 
 const IniciaSesion = () => {
@@ -13,9 +13,11 @@ const IniciaSesion = () => {
   const items = [
     {
       key: "1",
-      label: `Paso 1`,
+      label: `Iniciar Sesión con Correo y Contraseña`,
       children: (
         <Card>
+          <h2>Iniciar Sesión con Correo y Contraseña</h2>
+          <Divider style={{ borderColor: "white" }} />
           <h3>1. Abre Spotify</h3>
           <div className="step-container">
             <div className="sub-step-container">
@@ -33,14 +35,6 @@ const IniciaSesion = () => {
               </p>
             </div>
           </div>
-        </Card>
-      ),
-    },
-    {
-      key: "2",
-      label: `Paso 2`,
-      children: (
-        <Card>
           <h3>2. Ingresa tus datos de acceso</h3>
           <div className="step-container">
             <div className="sub-step-container">
@@ -56,20 +50,40 @@ const IniciaSesion = () => {
                 />
               </div>
             </div>
+            <p>Felicidades, haz iniciado sesión en Spotify.</p>
           </div>
         </Card>
       ),
     },
     {
-      key: "3",
-      label: `Paso 3`,
+      key: "2",
+      label: `Ingresa con Tu Número de Teléfono`,
       children: (
         <Card>
-          <h3>2.1 Inicia sesión con tu número de teléfono</h3>
+          <h2>Iniciar Sesión con Tu Número de Teléfono</h2>
+          <Divider style={{ borderColor: "white" }} />
+          <h3>1. Abre Spotify</h3>
+          <div className="sub-step-container">
+            <p>
+              Abre la aplicación de Spotify en tu dispositivo móvil o
+              computadora, o visita{" "}
+              <a
+                href="https://accounts.spotify.com/en/login"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                https://accounts.spotify.com/en/login
+              </a>{" "}
+              en un navegador web y da clic en "Continuar con el número de
+              teléfono"
+            </p>
+          </div>
+          <h3>2. Ingresa tu número de teléfono</h3>
           <div className="sub-step-container">
             <p>
               Ingresa tu número de teléfono que tienes registrado en Spotify y
-              da clic en "Próximo". Asegúrate de tener el código de tu país correctamente.
+              da clic en "Próximo". Asegúrate de tener el código de tu país
+              correctamente.
             </p>
             <div className="img-container">
               <img
@@ -79,8 +93,8 @@ const IniciaSesion = () => {
               />
             </div>
             <p>
-              Te llegará al número de teléfono que ingresaste un mensaje como el siguiente. Si no lo
-              recibes, haz clic en "Obtener nuevo código".
+              Te llegará al número de teléfono que ingresaste un mensaje como el
+              siguiente. Si no lo recibes, haz clic en "Obtener nuevo código".
             </p>
             <div className="img-container">
               <img
@@ -90,7 +104,8 @@ const IniciaSesion = () => {
               />
             </div>
             <p>
-              Luego, ingresa el código de 6 dígitos que aparece en el mensaje y da clic en "Siguiente".
+              Luego, ingresa el código de 6 dígitos que aparece en el mensaje y
+              da clic en "Siguiente".
             </p>
             <div className="img-container">
               <img
@@ -99,6 +114,7 @@ const IniciaSesion = () => {
                 alt="Imagen centrada"
               />
             </div>
+            <p>Felicidades, has iniciado sesión en Spotify.</p>
           </div>
         </Card>
       ),
@@ -112,17 +128,13 @@ const IniciaSesion = () => {
         onChange={setActiveTab}
         items={items}
         tabPosition="top"
-        tabBarStyle={{ color: "white" }} 
-        className="custom-tabs" 
+        tabBarStyle={{ color: "white" }}
+        className="custom-tabs"
       />
       {activeTab !== "3" && (
-      <Button
-  
-      className="spotify-button"  
-      onClick={handleNextTab}
-    >
-      Siguiente
-    </Button>
+        <Button className="spotify-button" onClick={handleNextTab}>
+          Siguiente
+        </Button>
       )}
     </div>
   );

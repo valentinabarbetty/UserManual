@@ -64,10 +64,7 @@ const Navbar = ({onSearch}) => {
           prefix={<SearchOutlined />}
         /></AutoComplete>
       </div>
-      <div className={`navbar-links ${visible ? 'visible' : ''}`}>
-        <span className="navbar-link">Profile</span>
-        <span className="navbar-link">Settings</span>
-      </div>
+     
       <div className="navbar-mobile-menu" onClick={handleMenuClick}>
         <MenuOutlined style={{ color: 'white', fontSize: '24px' }} />
       </div>

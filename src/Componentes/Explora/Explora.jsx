@@ -19,8 +19,8 @@ const Explora = () => {
           <h2>Buscar Contenido</h2>
           <Divider style={{ borderColor: "white" }} />
           <h3>
-            1. Dirígete a la parte superior de la aplicación y da clic en ¿Qué
-            quieres reproducir?{" "}
+            1. Dirígete a la parte superior de la aplicación y da clic en "¿Qué
+            quieres reproducir?"{" "}
           </h3>
           <h3>
             2. Ingresa el nombre de la canción, artista, podcast o playlist que
@@ -49,7 +49,7 @@ const Explora = () => {
           <Divider style={{ borderColor: "white" }} />
           <p>
             Para explorar música, playlists y podcasts que se adapten a tus
-            gustos, da clic en el ícono de Inicio en la parte superior de la
+            gustos, da clic en el ícono de "Inicio" en la parte superior de la
             aplicación.
           </p>
 
@@ -76,8 +76,7 @@ const Explora = () => {
           <Divider style={{ borderColor: "white" }} />
           <div className="sub-step-container">
             <p>
-              Explora nueva música dando clic al ícono de Explorar, encontrarás
-              muchos géneros para escoger.
+            Explora nueva música dando clic al ícono de "Explorar"; encontrarás muchos géneros para escoger.
             </p>
             <div className="img-container">
               <img
@@ -99,7 +98,7 @@ const Explora = () => {
           <Divider style={{ borderColor: "white" }} />
           <div className="sub-step-container">
             <p>
-              Dirígete a la sección de Podcasts en el Inicio de la aplición,
+              Dirígete a la sección de Podcasts en el Inicio de la aplicación;
               encontrarás podcasts de diferentes temas, que hayas escuchado
               recientemente, así como recomendaciones personalizadas.
             </p>

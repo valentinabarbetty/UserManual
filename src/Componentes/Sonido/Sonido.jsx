@@ -70,7 +70,7 @@ const Sonido = () => {
           <p>
             Para editar las opciones de reproducción:
           </p>
-          <h3>1. Dirígete a Tu Perfil.</h3>
+          <h3>1. Dirígete a "Tu Perfil".</h3>
           <h3>2. Selecciona "Preferencias" del menú desplegable.</h3>
           <div className="step-container">
             <div className="sub-step-container">
@@ -97,7 +97,7 @@ const Sonido = () => {
           </div>
             <div className="sub-step-container">
               <p>Encontrarás las siguientes opciones:</p>
-              <ul>1. Hacer una trasición gradual entre canciones </ul>
+              <ul>1. Hacer una transición gradual entre canciones </ul>
               <div className="sub-step-container">
               <p className="sub-step-container">Al seleccionar esta opción, aparecerá una barra para que gradúes el tiempo que desees que se haga la transición entre canciones</p>
               </div>

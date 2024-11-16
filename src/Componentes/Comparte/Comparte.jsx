@@ -25,7 +25,7 @@ const Comparte = () => {
             2. Da clic en los 3 puntos que aparecen a la derecha de la playlist o canción
           </h3>
           <h3>
-            3. Desplazate hacia abajo y selecciona la opción Compartir
+            3. Desplázate hacia abajo y selecciona la opción Compartir
           </h3>
           <h3>
             4. Da clic en "Copia enlace de la playlist" o "Copia enlace de la canción"

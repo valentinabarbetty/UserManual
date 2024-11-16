@@ -14,8 +14,7 @@ const Playlist = () => {
           <h2>1. Buscar contenido para tu Playlist</h2>
           <Divider style={{ borderColor: "white" }} />
           <p>
-            Dirígete a la barra de búsqueda en la parte superior de la aplicación y da clic en "¿Qué quieres reproducir?".
-            Luego, ingresa el nombre de la canción, artista, podcast o playlist que desees agregar a tu playlist.
+            Dirígete a la barra de búsqueda en la parte superior de la aplicación y haz clic en "¿Qué quieres reproducir?". Luego, ingresa el nombre de la canción, artista, podcast o lista de reproducción que desees agregar.
           </p>
           <div className="step-container">
             <div className="sub-step-container">

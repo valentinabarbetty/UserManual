@@ -36,7 +36,7 @@ const Premium = () => {
       children: (
         <Card>
           <h3>
-            2. Da clic en "Ver Planes" aparecerán distintos planes con
+            2. Da clic en "Ver Planes"; aparecerán distintos planes con
             diferentes características.
           </h3>
           <div className="step-container">
@@ -59,12 +59,10 @@ const Premium = () => {
       children: (
         <Card>
           <h3>
-            3. Selecciona el plan que más se ajuste a tus necesidades, se te
-            redireccionará a la página de pago.
+            3. Selecciona el plan que más se ajuste a tus necesidades; se te redireccionará a la página de pago.
           </h3>
           <p className="sub-step-container">
-            Podrás visualizar la información del pago, como total a pagar, el
-            plan que escogiste, y dessde cuando se empieza a cobrar.
+          Podrás visualizar la información del pago, como el total a pagar, el plan que escogiste y desde cuándo se empieza a cobrar.
           </p>
           <div className="step-container">
             <div className="sub-step-container">
@@ -121,13 +119,13 @@ const Premium = () => {
         label: `Paso 5`,
         children: (
           <Card>
-            <h3>5. Revisa la Información</h3>
+            <h3>5. Revisa la información</h3>
             <div className="step-container">
               <p>
                 Una vez añadido el método de pago, revisa la información de tu compra y el plan que escogiste.
               </p>
               <p>
-                Da clic en continuar compra para finalizar el proceso.
+                Da clic en "Continuar Compra" para finalizar el proceso.
               </p>
             </div>
             <div className="step-container">

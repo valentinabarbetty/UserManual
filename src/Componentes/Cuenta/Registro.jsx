@@ -65,9 +65,9 @@ const Registro = () => {
         <Card>
           <h3>3. Agrega una nueva contraseña, recuerda que debe contener:</h3>
           <div className="sub-step-container">
-            <ul>1. 1 letra</ul>
-            <ul>2. 1 número o carácter especial (ejemplo: # ? ! &)</ul>
-            <ul>3. 10 caracteres</ul>
+            <ul>1. Una letra</ul>
+            <ul>2. Un número o carácter especial (ejemplo: # ? ! &)</ul>
+            <ul>3. Diez caracteres</ul>
             <p>Da clic en "Próximo".</p>
             <div className="img-container">
               <img
@@ -104,7 +104,7 @@ const Registro = () => {
       label: `Paso 5`,
       children: (
         <Card>
-          <h3>4. Acepta los términos y condiciones:</h3>
+          <h3>5. Acepta los términos y condiciones:</h3>
           <p>Da clic en "Próximo".</p>
           <div className="img-container">
             <img
